@@ -11,15 +11,13 @@ var express = require('express'),
     passportSocketIo = require('passport.socketio');
 
 
-
-var sessionStore   = new connect.session.MemoryStore(),
-
-    sessionSecret  = 'asdasdsdas1312312',
-    sessionKey     = 'test-session-key',
+var systemSettings = require('./systemSettings');
+	sessionSecret  = systemSettings.sessionSecret; 
+    sessionKey     = systemSettings.sessionKey; 
+	mongoString    = systemSettings.mongoString; 
 	
-	//Set mongoDB connection string
-	mongoString    = '';
-	
+
+var sessionStore   = new connect.session.MemoryStore();
 var sessionOptions = {
       store:  sessionStore,
       key:    sessionKey,
