@@ -1,0 +1,23 @@
+{
+  "name": "nodester",
+  "scripts": {
+    "start": "app.js"
+  },
+  "version": "0.1.0-4",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "subdomain": "alexpsi",
+  "dependencies": {
+    "connect-flash": "0.1.x",
+    "ejs-locals": "1.0.x",
+    "xtend": "1.0.x",
+    "connect": "2.7.x",
+    "passport": "0.1.x",
+    "passport-local": "0.1.x",
+    "express": "3.1.x",
+    "socket.io": "0.9.x",
+    "passport.socketio": "1.0.x",
+    "mongoose": "3.5.x"
+  }
+}
